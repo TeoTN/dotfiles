@@ -85,5 +85,7 @@ source $ZSH/oh-my-zsh.sh
 #
 alias g='git'
 alias install='sudo dnf install'
+alias update='sudo dnf update'
+alias upgrade='sudo dnf upgrade'
 alias py='python'
 
