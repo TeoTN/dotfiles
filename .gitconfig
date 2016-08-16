@@ -1,0 +1,17 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Piotr Staniów
+	email = staniowp@gmail.com
+[push]
+	default = simple
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	sh = push
+	pu = pull
+	br = branch
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	type = cat-file -t
+	dump = cat-file -p\n
