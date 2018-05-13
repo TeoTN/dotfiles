@@ -2,7 +2,7 @@
     name = Piotr Staniów
     email = staniowp@gmail.com
 [push]
-    default = simple
+    default = current
 [core]
     autocrlf = false
 [alias]
@@ -10,14 +10,17 @@
     ci = commit
     st = status
     sh = push
+    shu = push -u
     pu = pull
     br = branch
     me = merge
     fe = fetch
+    pi = cherry-pick
     pick = cherry-pick
     bi = bisect
     rh = reset --hard
+    rhe = reset HEAD
+    ap = add -p
     hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
     type = cat-file -t
     dump = cat-file -p\n
-
