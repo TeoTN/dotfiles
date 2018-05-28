@@ -7,7 +7,9 @@
     autocrlf = false
 [alias]
     co = checkout
+    nbr = checkout -b
     ci = commit
+    cia = commit --amend
     st = status
     sh = push
     shu = push -u
