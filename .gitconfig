@@ -21,8 +21,8 @@
     rh = reset --hard
     rhe = reset HEAD
     ap = add -p
-	rbi = rebase --interactive
-	rbc = rebase --continue
+    rbi = rebase --interactive
+    rbc = rebase --continue
     hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
     type = cat-file -t
     dump = cat-file -p\n
