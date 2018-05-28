@@ -14,6 +14,7 @@
     pu = pull
     br = branch
     me = merge
+    mea = merge --abort
     fe = fetch
     pi = cherry-pick
     pick = cherry-pick
@@ -23,6 +24,7 @@
     ap = add -p
     rbi = rebase --interactive
     rbc = rebase --continue
+    rba = rebase --abort
     ss = stash
     sa = stash apply
     hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
