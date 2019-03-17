@@ -2,7 +2,7 @@
 set nocompatible
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
 " Set color scheme!¬
-colorscheme grb256
+colorscheme one
 set background=dark
 set clipboard=unnamed
 " Enhance command-line completion
@@ -42,7 +42,7 @@ syntax on
 " Highlight current line
 set cursorline
 " Make tabs as wide as two spaces
-set tabstop=2
+set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
 " Enable line numbers
 set number
 " Show “invisible” characters
