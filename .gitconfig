@@ -16,6 +16,7 @@
     sh = push
     shu = push -u
     pu = pull
+    purr = pull --rebase
     br = branch
     me = merge
     mea = merge --abort
