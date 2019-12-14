@@ -1,41 +1,70 @@
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/teotn/.oh-my-zsh
+export ZSH="~/.oh-my-zsh"
 
-# Set name of the theme to load.
-ZSH_THEME="robbyrussell"
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+ZSH_THEME="avit"
 
-# Uncomment the following line to use hyphen-insensitive completion. Case
-# sensitive completion must be off. _ and - will be interchangeable.
-HYPHEN_INSENSITIVE="true"
-
-# How often to auto-update (in days).
 export UPDATE_ZSH_DAYS=7
 
-# Change the command execution time stamp shown in the history command output.
+# Uncomment the following line if pasting URLs and other text is messed up.
+# DISABLE_MAGIC_FUNCTIONS=true
+
+# Uncomment the following line to enable command auto-correction.
+ENABLE_CORRECTION="true"
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# You can set one of the optional three formats:
+# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# or set a custom format using the strftime function format specifications,
+# see 'man strftime' for details.
 HIST_STAMPS="dd.mm.yyyy"
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Which plugins would you like to load?
+# Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(git)
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(
+  git
+  docker
+  extract
+  npm
+  sudo
+)
 
-
-# User configuration
-
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 source $ZSH/oh-my-zsh.sh
 
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
 
-alias tree="tree -I \"node_modules\""
-alias update="brew update && brew upgrade `brew outdated`"
-alias ..="cd .."
-alias $=""
-alias nr="npm run"
-alias n="npm"
-alias rc="source ~/.zshrc"
+export EDITOR='vim'
+
+alias tree='tree -I "node_modules"'
+alias nr='npm run'
+alias n='npm'
+alias rc='source ~/.zshrc'
+alias vrc='vim ~/.zshrc'
+alias g='git'
+alias py='python'
+alias sl='ls'
+
+alias deploy='docker stack deploy --with-registry-auth -c docker-compose.yml'¬
+alias dkr='docker'¬
+alias ds='docker service'¬
+alias dc='docker container'¬
+alias dx='docker exec -it'¬
+alias dp='docker ps'¬
+alias di='docker image'¬
+alias dl='docker logs'¬
+alias dls='docker service logs'¬
+alias dn='docker network'¬
 
