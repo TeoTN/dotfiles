@@ -2,10 +2,13 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="~/.oh-my-zsh"
+export ZSH="${HOME}/.oh-my-zsh"
+export ZSH_CACHE_DIR="${ZSH}/cache"
 
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="avit"
+# Preferred: avit, bureau, pygmalion
+ZSH_THEME="bureau"
+
 
 export UPDATE_ZSH_DAYS=7
 
