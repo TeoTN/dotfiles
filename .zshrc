@@ -2,8 +2,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-export PATH="$(npm root -g):$PATH"
-export PATH="$(yarn global bin):$PATH"
+[ -x "$(command -v npm)" ] && export PATH="$(npm root -g):$PATH"
+[ -x "$(command -v yarn)" ] && export PATH="$(yarn global bin):$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH="${HOME}/.oh-my-zsh"
@@ -20,7 +20,7 @@ export UPDATE_ZSH_DAYS=7
 # DISABLE_MAGIC_FUNCTIONS=true
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
