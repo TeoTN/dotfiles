@@ -6,7 +6,7 @@
 [core]
     autocrlf = false
     excludesfile = ~/.gitignore
-    pager = cat
+    pager = less -ixFMR
 [alias]
     co = checkout
     nbr = checkout -b
