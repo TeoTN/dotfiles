@@ -55,7 +55,10 @@ source $ZSH/oh-my-zsh.sh
 
 export EDITOR='vim'
 
+setopt autocd autopushd pushdignoredups
+
 alias tree='tree -I "node_modules"'
+alias ..='cd ..'
 alias nr='npm run'
 alias n='npm'
 alias rc='source ~/.zshrc'
@@ -75,4 +78,4 @@ alias dl='docker logs'¬
 alias dls='docker service logs'¬
 alias dn='docker network'¬
 
-
+[ -s "$HOME/.workrc" ] && source $HOME/.workrc
