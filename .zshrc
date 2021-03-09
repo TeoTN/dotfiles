@@ -67,15 +67,15 @@ alias g='git'
 alias py='python'
 alias sl='ls'
 
-alias deploy='docker stack deploy --with-registry-auth -c docker-compose.yml'¬
-alias dkr='docker'¬
-alias ds='docker service'¬
-alias dc='docker container'¬
-alias dx='docker exec -it'¬
-alias dp='docker ps'¬
-alias di='docker image'¬
-alias dl='docker logs'¬
-alias dls='docker service logs'¬
-alias dn='docker network'¬
+alias deploy='docker stack deploy --with-registry-auth -c docker-compose.yml'
+alias dkr='docker'
+alias ds='docker service'
+alias dc='docker container'
+alias dx='docker exec -it'
+alias dp='docker ps'
+alias di='docker image'
+alias dl='docker logs'
+alias dls='docker service logs'
+alias dn='docker network'
 
 [ -s "$HOME/.workrc" ] && source $HOME/.workrc
