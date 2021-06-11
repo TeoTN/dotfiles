@@ -12,6 +12,7 @@
     nbr = checkout -b
     ci = commit
     cia = commit --amend
+    cinam = commit -nam
     st = status
     sh = push
     shu = push -u
@@ -27,6 +28,7 @@
     rh = reset --hard
     rhe = reset HEAD
     ap = add -p
+    rb = rebase
     rbi = rebase --interactive
     rbc = rebase --continue
     rba = rebase --abort
