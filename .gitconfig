@@ -36,4 +36,5 @@
     type = cat-file -t
     dump = cat-file -p\n
     re = remote -v
-
+[branch "master"]
+    pushRemote = no_push
