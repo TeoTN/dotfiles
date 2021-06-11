@@ -40,3 +40,5 @@
     re = remote -v
 [branch "master"]
     pushRemote = no_push
+[include]
+    path = ~/.gitconfig.local
