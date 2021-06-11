@@ -6,7 +6,6 @@
 [core]
     autocrlf = false
     excludesfile = ~/.gitignore
-    pager = less -ixFMR
     hooksPath = ~/.git_hooks
 [alias]
     co = checkout
