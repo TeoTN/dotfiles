@@ -38,6 +38,9 @@
     type = cat-file -t
     dump = cat-file -p\n
     re = remote -v
+[pager]
+    status = false
+    branch = false
 [branch "master"]
     pushRemote = no_push
 [include]
