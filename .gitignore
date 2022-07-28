@@ -16,3 +16,5 @@ db.sqlite3
 *.css.map
 *.sass.map
 *.scss.map
+.DS_Store
+patch
