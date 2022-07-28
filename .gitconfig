@@ -3,6 +3,8 @@
     email = staniowp@gmail.com
 [push]
     default = current
+[pull]
+    rebase = true
 [core]
     autocrlf = false
     excludesfile = ~/.gitignore
